@@ -1,0 +1,25 @@
+<formulario_listas.html>
+    <body>
+        <title>Listas desplegables</title>
+        <label for="pais">Selecciona tu país:</label>
+        <select id="pais" name="pais" required>
+            <option value="" disabled selected>Elige tu país</option>
+            <option value="mexico">México</option>
+            <option value="espana">España</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+            <option value="chile">Chile</option>
+        </select>
+
+        <label for="idiomas">Selecciona los idiomas que hablas:</label>
+        <select id="idiomas" name="idiomas[]" multiple size="5" required>
+            <option value="espanol">Español</option>
+            <option value="ingles">Inglés</option>
+            <option value="frances">Francés</option>
+            <option value="aleman">Alemán</option>
+            <option value="portugues">Portugués</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </body>
+</formulario_listas.html>

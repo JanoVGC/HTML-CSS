@@ -1,0 +1,64 @@
+<calificacion.html>
+    <head>
+        <title>Calificación</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                color: #333;
+            }
+            .rating {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .rating label {
+                margin-right: 10px;
+            }
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #bac4a9;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #bac4a9;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Selecciona tu Calificación</h1>
+    
+        <form action="#" method="POST">
+            <!-- Calificación con botones de radio -->
+            <div class="rating">
+                <label>
+                    <input type="radio" name="calificacion" value="1" required>
+                    1 Estrella
+                </label>
+                <label>
+                    <input type="radio" name="calificacion" value="2">
+                    2 Estrellas
+                </label>
+                <label>
+                    <input type="radio" name="calificacion" value="3">
+                    3 Estrellas
+                </label>
+                <label>
+                    <input type="radio" name="calificacion" value="4">
+                    4 Estrellas
+                </label>
+                <label>
+                    <input type="radio" name="calificacion" value="5">
+                    5 Estrellas
+                </label>
+            </div>
+
+            <button type="submit">Enviar Calificación</button>
+        </form>
+    </body>
+</calificacion.html>

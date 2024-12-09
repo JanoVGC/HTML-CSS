@@ -1,0 +1,54 @@
+<lista_tareas.html>
+    <head>
+        <title>Lista de Tareas</title>
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #bac4a9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: ##bac4a9;
+        }
+        </style> 
+    </head>
+    <body>
+        <h1>Lista de Tareas</h1>
+    
+        <!-- Lista de tareas -->
+        <ul id="lista-tareas">
+            <li>
+                <input type="checkbox" id="tarea 1">
+                <label for="tarea 1">Comprar alimentos</label>
+            </li>
+            <li>
+                <input type="checkbox" id="tarea 2">
+                <label for="tarea 2">Limpiar la casa</label>
+            </li>
+            <li>
+                <input type="checkbox" id="tarea 3">
+                <label for="tarea 3">Terminar proyecto</label>
+            </li>
+        </ul>
+    
+        <!-- Botones simulados -->
+        <button id="agregar-tarea">Agregar tarea</button>
+        <button id="borrar-tarea">Borrar tarea</button>
+</lista_tareas.html>

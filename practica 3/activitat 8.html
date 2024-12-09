@@ -1,0 +1,68 @@
+<pestanas.html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pestañas</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            /* Estilos para las pestañas */
+            .tabs {
+                display: flex;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            .tabs label {
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                border-bottom: none;
+                background-color: #f1f1f1;
+                margin-right: 5px;
+            }
+            input[type="radio"] {
+                display: none;
+            }
+            input[type="radio"]:checked + label {
+                background-color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+            /* Estilos para el contenido */
+            section {
+                border: 1px solid #ccc;
+                padding: 20px;
+                display: none;
+            }
+            input[type="radio"]:checked + label + section {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sistema de Pestañas (Tabs) en HTML</h1>
+    
+        <!-- Pestañas -->
+        <div class="tabs">
+            <input type="radio" id="tab1" name="tabs" checked>
+            <label for="tab1">Pestaña 1</label>
+            <section>
+                <h2> Pestaña 1</h2>
+                <p>primera pestaña.</p>
+            </section>
+    
+            <input type="radio" id="tab2" name="tabs">
+            <label for="tab2">Pestaña 2</label>
+            <section>
+                <h2>Pestaña 2</h2>
+                <p>segunda pestaña.</p>
+            </section>
+    
+            <input type="radio" id="tab3" name="tabs">
+            <label for="tab3">Pestaña 3</label>
+            <section>
+                <h2>Pestaña 3</h2>
+                <p>tercera pestaña.</p>
+            </section>
+        </div>
+    </body>
+</pestanas.html>
